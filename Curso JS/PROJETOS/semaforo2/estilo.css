@@ -1,0 +1,69 @@
+body{
+    background-color: rgb(255, 255, 255);
+    font: normal 15pt Arial;
+}
+
+header{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font: italic 15pt Arial;
+}
+section{
+    font: arial 5pt;
+    background-color: rgb(24, 23, 23);
+    border-radius: 10px;
+    padding: 15px;
+    width: 175px;
+    height: 500px;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.226);
+    
+}
+.opacidade{
+    opacity: 0.3;
+}
+
+div#red{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-color: red; 
+    margin: 10px;
+}
+
+
+div#yellow{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-color: yellow;
+    margin: 10px;
+
+}
+
+div#green{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-color: green;
+    margin: 10px;
+}
+
+input{
+    
+    display:block;
+    margin: 10px auto;
+    width: 250px;
+    height: 30px;
+    
+}
+
+
+
+footer{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-style: italic;
+}
+

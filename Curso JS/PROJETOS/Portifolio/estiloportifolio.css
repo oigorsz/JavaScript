@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(5, 145, 133);
+    font: italic 15pt bolder;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+section{
+    font: arial 5pt;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.226);
+}
+input{
+    display:block;
+    margin: 10px auto;
+    width: 250px;
+    height: 30px;
+    font: normal 15pt Arial;
+    opacity: 0.7;
+    
+}
+
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font:  italic 18pt Arial;
+    margin: 10px;
+  
+}

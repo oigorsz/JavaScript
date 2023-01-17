@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de notas</title>
+</head>
+<body>
+    <p>Simulador de Notas Colégio X</p>
+    <h1>Digite suas notas, separadamente, nos campos abaixo. </h1>
+
+<input type = "number" name ='txtn1' id="txtn1"> 
+<input type = "number" name="txtn2" id="txtn2">
+<input type = "number" name=" txtn3" id ="txtn3">
+<input type ="button" value="calcular média" onclick="media()">
+<div id='res'>digite suas notas nos campos acima</div>
+<script>
+    function media(){
+   var txtn1 = window.document.getElementById('txtn1')
+   var txtn2 = window.document.getElementById('txtn2')
+   var txtn3 = window.document.getElementById('txtn3')
+   var n1 = Number(txtn1.value)
+   var n2 = Number(txtn2.value)
+   var n3 = Number(txtn3.value)
+   var med = (n1 + n2 + n3)/3
+   var res = window.document.getElementById('res')
+   med >= 5.5 ? res.innerHTML = `Parabéns, você foi aprovado com média igual a ${med.toFixed(1)}.`
+    : res.innerHTML =`Infelizmente você não foi aprovado pois sua média foi de ${med.toFixed(1)}.`
+    }
+
+
+
+
+
+</script>
+    
+</body>
+</html>

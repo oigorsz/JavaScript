@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel = "stylesheet" href="estilo.css">
+
+</head>
+<body>
+    <header>
+        <h1>BANCO AGIO</h1>
+    </header>
+    
+    <section>
+        <h1>Banco Agio-Seu Empréstimo Aqui</h1>
+        <p>Quanto você gostaria de emprestar em R$<input type="number" name="empre1" id="empre1"></p>
+        <p>Em quantos mêses você gostaria de pagar as parcelas <input type="number" name="tempo1" id ="tempo1"></p>
+        <p>Até 3 meses a taxa de juros simples é de 3% </p>
+        <p>Acima de 3 meses a taxa de juros será 3% compostos</p>
+        <p><input type ="button" value="analisar" onclick="analisar()"></p>
+        <div id="res">resultado</div>
+        <p><input type ="button" value="voltar" onclick="voltar()"></p>
+
+  
+    </section>
+
+    <footer>
+        @imonteiro
+    </footer>
+
+    <script src="script.js">
+
+    </script>
+    
+</body>
+</html>

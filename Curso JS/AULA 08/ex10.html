@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><h1>Sistema de notas escolas </h1>
+    <script>
+window.alert('Você está no Sistema de Notas do Colégio X')
+var n1 = window.prompt('Digite o seu nome de usuário')
+var senha = 2004
+var p1 = Number(window.prompt('Digite a nota da Prova 1'))
+var p2 = Number(window.prompt('Digite a nota da Prova 2'))
+var p3 = Number(window.prompt('Digite a nota da Prova 3'))
+var media = (p1+p2+p3)/3
+media >=5.5? document.write(`Parabéns ${n1}, você foi aprovado ! Sua média foi de ${media.toFixed(1)}`)
+ : document.write(`Reprovado ${n1}, infelizmente sua média foi de ${media.toFixed(1)}`)
+
+
+
+    </script>
+</body>
+</html>

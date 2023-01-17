@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre você</title>
+</head>
+<body>
+    <h1>Sobre você</h1>
+<p>Responda as perguntas abaixo</p>
+<p>Nome <input type = "name" name="txtnome1" id="txtnome1"></p>
+<p>Idade <input type = "number" name="txtidade1" id="txtidade1"></p>
+<p>País <input type ="name" name="txtpais1" id="txtpais1" ></p>
+<p><input type = "button" value="analisar" onclick="analisar()"></p>
+<div id="res">resultado</div>
+<script>
+function analisar(){
+    var txtnome1 = window.document.getElementById("txtnome1")
+    var txtidade1 = window.document.getElementById("txtidade1")
+    var txtpais1 = window.document.getElementById("txtpais1")
+    var nome1 = txtnome1.value
+    var idade1 = Number(txtidade1.value) 
+    var pais1 = txtpais1.value
+    var res = window.document.getElementById("res")
+    res.innerHTML = `<p>O SEU NOME É ${nome1.toUpperCase()}</p>`
+    res.innerHTML += `<p>VOCÊ TEM ${idade1} ANOS DE IDADE </p>`
+
+    if(pais1 == "Brasil"|| pais1== "Brazil"){
+     res.innerHTML+= `<p>VOCÊ É BRASILEIRO</p>`
+    }
+    else{
+     res.innerHTML+=`<p>VOCÊ É ESTRANGEIRO</p>`
+    }
+
+    
+}
+
+</script>
+
+    
+</body>
+</html>

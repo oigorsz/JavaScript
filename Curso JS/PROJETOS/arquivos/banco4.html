@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empréstimos Juros Simples</title>
+</head>
+<body>
+    <h1>Banco Agio-Seu Empréstimo Aqui</h1>
+    <p>Quanto você gostaria de emprestar em R$<input type="number" name="empre1" id="empre1"></p>
+    <p>Em quantos mêses você gostaria de pagar as parcelas <input type="number" name="tempo1" id ="tempo1"></p>
+    <p><input type ="button" value="analisar" onclick="analisar()"></p>
+    <div id="res">resultado</div>
+
+    <script>
+        function analisar(){
+        var txtempre1 = window.document.getElementById("empre1")
+        var txttempo1 = window.document.getElementById("tempo1")
+        var res = window.document.getElementById("res")
+        var empre1 = Number(txtempre1.value)
+        var tempo1 = Number(txttempo1.value)
+        res.innerHTML= `<p>Você quer emprestar R$${empre1}</p>`
+        res.innerHTML+= `<p>Você quer pagar em ${tempo1} meses</p>`
+        var total1 = (tempo1/10)*empre1 + empre1
+            var mensal1 = total1/tempo1
+            var juros1 = (tempo1/10)*empre1
+            res.innerHTML+= `<p>A taxa de juros simples vai ser de ${tempo1}%</p>`
+            res.innerHTML+= `<p>Você pagará mensalmente um valor de R$${mensal1}</p>`
+            res.innerHTML+= `<p>Você pagará um total de R$${total1} ao final dos ${tempo1} mesess</p>`
+            res.innerHTML+= `<p>Totalizando R$${juros1} em juros </p>`
+    
+        }
+    </script>
+    
+</body>
+</html>

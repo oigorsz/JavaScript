@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        background-color:rgb(118, 118, 245);
+        color: white;
+        font: normal 18pt Arial;
+
+        }
+    </style>
+</head>
+<body>
+    <h1> Iniciando Estudos com DOM</h1>
+    <p>Aqui vai o resultado: </p>
+    <p> Aprendendo a usar o <strong>DOM</strong> em Java Script.</p>
+    <div id = msg>Clique aqui</div>
+    <script>
+       // window.document.write(window.URL)//mostra  a URL do site
+       var p1 = window.document.getElementsByTagName('p')[0]//acessar o parágrafo 2
+       window.document.write(p1.innerText)//Mudar a cor do parágrafo selecionado
+       p1.style.color = 'blue'//Iner HTML copia o texto formatado
+       var corpo = window.document.body//mudar a cor do background
+      //corpo.style.background = 'black'
+      //var d = window.document.getElementById('msg')
+     // d.style.background = 'blue'
+      //d.innerText = 'Estou aguardando...'
+      var d = window.document.querySelector('duv#msg')
+      d.sttyle.color = 'blue'
+
+
+
+
+    </script>
+
+    
+</body>
+</html>

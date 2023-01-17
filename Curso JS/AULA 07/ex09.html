@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><h1>Calculador de notas</h1>
+    <script> 
+    var n1 = window.prompt('Olá qual o seu nome ? ')
+    window.alert(`Olá, ${n1}! Seja bem vindo ao Calculador de Médias`)
+    var p1 = Number(window.prompt('digite a nota da prova 1'))
+    var p2 = Number(window.prompt('digite a nota da prova 2'))
+    var p3 = Number(window.prompt('digite a nota da prova 3'))
+    var m1 = Number((p1+p2+p3)/3)
+    document.write(`A sua média nessas provas foi de ${m1.toFixed(1)}. `)
+    </script>
+    
+</body>
+</html>

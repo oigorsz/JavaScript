@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(255, 255, 255);
+    font: normal 15pt Arial;
+}
+
+header{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+section{
+display: block;
+ align-items: center;
+ width: 250px;
+ align-items: center;
+ display: flexs;
+ text-align: center;
+}
+
+
+
+
+footer{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-style: italic;
+}
+

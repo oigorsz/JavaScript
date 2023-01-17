@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor de Códigos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de IMC</h1>
+    </header>
+
+    <main>
+        <p>Qual a sua Massa em Kg: <input type="number" name="txtmassa" id="txtmassa"></p>
+        <p>Qual a sua Altura em Metros: <input type="number" name="txtaltura" id="txtaltura"></p>
+        <p><button onclick="add()">
+            Calcular
+        </button></p>
+
+        <section>
+            <h2>Resultado</h2>
+            <article id = res></article>
+            <p><button onclick="reset()">Resetar</button></p>
+        </section>
+    </main>
+    <footer></footer>
+
+
+    <script>
+        function add(){
+            let txtmassa = document.getElementById('txtmassa')
+            let txtaltura = document.getElementById('txtaltura')
+            let massa = Number(txtmassa.value) 
+            let altura = Number(txtaltura.value)
+
+            if (massa.value == '' || altura.value == '' || massa <= 0 || altura <= 0){
+                window.alert('erro')
+            } else {
+                let res = document.getElementById('res')
+                let imc = (massa/(altura**2))
+                if (imc < 18.5){
+                    res.innerHTML += 'Sua classificação é: Baixo Peso'
+                } else if (imc < 24.99){
+                    res.innerHTML += 'Sua classificação é: Normal '
+                } else if (imc < 29.99){
+                    res.innerHTML += 'Sua classificação: Sobrepeso'
+                } else {
+                    res.innerHTML += 'Sua classificação é: Obesidade'
+                }
+                res.innerHTML += `<br>O seu IMC é de ${imc.toFixed(2)}`
+            }
+        }
+
+        function reset(){
+            txtaltura.value = ''
+            txtmassa.value = ''
+            res.innerHTML = ''
+            txtmassa.focus()
+        }
+
+
+    </script>
+</body>
+</html>

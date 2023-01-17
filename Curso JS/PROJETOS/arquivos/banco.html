@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de empréstimos</title>
+    <p>Simulador de empréstimos</p>
+</head>
+<body>
+    <input type = 'number' name ='txtn1' id="txtn1">
+    <input type = 'button' value ='imprimir' onclick="imprimir()">
+    <div id="res">o resultado é de </div>
+
+<script>
+var res = window.document.getElementById('res')
+    function imprimir(){
+   var txtn1 = window.document.getElementById('txtn1')
+   var n1 = Number(txtn1.value)
+   res.innerHTML = `O resultado é de ${n1}`
+
+
+    }
+
+
+
+
+</script>
+
+
+    
+
+
+    
+</body>
+</html>

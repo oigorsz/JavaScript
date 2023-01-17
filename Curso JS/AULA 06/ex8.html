@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:green;
+            color: yellow;
+            font:normal 20pt bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>Banco Agio</h1>
+    <p> Ou paga-se com dinheiro ou paga-se com a vida</p>
+    <script>//Simulador de agiotagem 
+var n1 = window.prompt('Qual seu nome de usuário ? ')
+window.alert(`Seja bem vindo, ${n1}`)
+var e1 = Number(window.prompt(`${n1}, quantos reais você gostaria de emprestar?`))
+var v1 = 1.5*e1
+var j1 = 0.5*e1
+document.write(`${n1}, para emprestar R$${e1}
+você pagará R$${v1}, ou seja, pagará R$${j1} de juros.`)
+</script>
+</body>
+
+</html>
