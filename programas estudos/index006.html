@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolhendo código de lingua</title>
+</head>
+<body>
+    <script>
+        let idioma = prompt("Digite o código do seu idioma")
+        if (idioma == "pt" || idioma == "en") {
+            let vari = prompt("Digite a variação do seu idioma")
+
+            if ((idioma == "pt") && (vari == "br")) {
+                alert("O seu idioma é o português do Brasil")
+            } else if ((idioma == "pt") && vari == "pt"){
+                alert("O seu idioma é o português de Portugal")
+            } else if ((idioma == "en") && (vari == "us")) {
+                alert("Your language is US English")
+            } else if ((idioma == "en") && (vari == "gb")) {
+                alert("Your language is British English")
+            }
+            
+        } else {
+            alert("Digite um código de idioma válido")
+        }
+
+        
+    </script>
+    
+</body>
+</html>
