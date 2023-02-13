@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <script>
+         function soma(a, b){
+            return a + b
+        }
+
+        function sub(a, b){
+            return a - b
+        }
+
+        function mul(a, b){
+            return a * b
+        }
+
+        function div(a, b){
+            return a/b
+        }
+
+        let n1 = Number(prompt("Digite um número "))
+        let n2 = Number(prompt("Digite outro número "))
+        let op = String(prompt("Digite a operação que se deseja realizaar"))
+
+        if (op == "+"){
+            alert(`A soma é de ${soma(n1, n2)}`)
+        } else if (op == "-"){
+            alert(`A subtraação é de ${sub(n1, n2)}`)
+        } else if (op == "/"){
+            alert(`A divisão é de ${div(n1, n2)}`)
+        } else if (op == "*"){
+            alert(`A multiplicação é de ${mul(n1, n2)}`)
+        } else {
+            alert("Digite um operador válido")
+        }
+
+    </script>
+    
+</body>
+</html>
