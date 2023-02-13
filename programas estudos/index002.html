@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaveis</title>
+</head>
+<body>
+    <h1>Cálculo de IMC</h1>
+    <form action="form.php" method="get">
+        <label for="ipeso">Peso: </label> <input type="number" name="peso" id="ipeso" required placeholder="peso em Kg" min="0"><br>
+        <label for="ialtura">Altura: </label> <input type="number" name="altura" id="ialtura" required in="0.01" step="0.1" placeholder="altura em metros" maxlength="3">
+
+        <input type="button" value="calcular" onclick="calcular()">
+
+        <div id="res">
+            <p>coloque seus dados acima</p>
+        </div>
+
+    </form>
+    <script>
+        function calcular() {
+            let txtpeso = window.document.getElementById("ipeso")
+            let txtaltura = window.document.getElementById("ialtura")
+            
+            if (txtpeso.value == "" || txtaltura.value == "") {
+                window.alert ("Preencha os campos acima")
+            } 
+            if (txtpeso.value <= 0 || txtaltura.value <= 0) {
+                window.alert("Coloque valores válidos")
+            } 
+            else {
+                let peso = Number(txtpeso.value)
+                let altura = Number(txtaltura.value)
+                let imc = peso/ (altura**2)
+                let res = window.document.getElementById("res")
+                 res.innerHTML = `${imc.toFixed(2)}`
+            }
+        }
+       
+    </script>
+</body>
+</html>
