@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando escopo</title>
+</head>
+<body>
+    <script>
+        // Trocar o valor da variável ao longo do código
+        console.log("Testando escopos")
+        var n = Number(prompt("Digite um número"))
+        console.log(`Você escolheu o número ${n}`)
+        console.log("n", n)
+        {
+            n = n + 10
+            console.log(n)
+            n = n + 10
+            console.log(n)
+            n = n**2
+        }
+
+        console.log(n)
+    </script>
+</body>
+</html>
