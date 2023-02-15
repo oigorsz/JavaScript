@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Date</title>
+</head>
+<body>
+    <script>
+        console.log("Testando Date")
+        const today = new Date() // valores atuais
+        const bornDate = new Date("2004-08-16") //valores pré definidos
+
+        console.log(`Você nasceu no dia ${(bornDate.getDate() + 1)}`)
+        console.log(`Você nasceu no mês ${(bornDate.getMonth() + 1)}`)
+        console.log(`Você nasceu no ano de ${bornDate.getFullYear()}`)
+        const idade = today.getFullYear() - bornDate.getFullYear()
+        console.log(`Portanto sua idade é de ${idade}`)
+       
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Testando objetos</title>
+</head>
+<body>
+    <script>
+        console.log("Tudo certo !")
+
+        const person = {
+            name : "Igor",
+            age : 18,
+            sex : "masculino",
+            address : {
+                street : "Rua Grande",
+                number : 716,
+                city : "Sanja City",
+            }
+        }
+
+        //Adicionando valores para o object
+        console.log(person)
+        person.hair = "black"
+        person.address.zona = "Zona Sul"
+
+        //console.log(`O cliente ${person.name}, sexo ${person.sex}, cuja idade é de ${person.age} anos possui o seguinte endereço ${JSON.stringify(person.address)}`)
+
+        console.log(`O cliente ${person.name}, sexo ${person.sex}, cuja idade é de ${person.age} anos, reside em ${person.address.city} na ${person.address.street} no número ${person.address.number}`)
+    </script>
+</body>
+</html>
