@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+span {
+    cursor: pointer;
+}
+
+#historico {
+    display: block;
+}
+
+#res {
+    display: none;
+}

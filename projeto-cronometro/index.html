@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <h1>Projeto Cronômetro</h1>
+    </header>
+    <main>
+        <div id="display">
+           00:00:00
+        </div>
+        <div>
+            <button id="start" class="bot" onclick="start()">Iniciar</button>
+            <button id="stop" class="bot" onclick="pause()">Pausar</button>
+            <button id="reset" class="bot" onclick="reset()">Resetar</button>
+        </div>
+        <div>
+            <span id="historico" class="material-symbols-outlined" onclick="history()">
+                history
+                </span>
+                <div id="tempos">
+                    <h1>Histórico</h1>
+                    <p id="res"></p>
+                    <span onclick="clean()" id="clean" class="material-symbols-outlined"> cleaning_services</span>
+                   
+                </div>
+                
+                
+        </div>
+    </main>
+    <script src="contador.js"></script>
+
+
+    </script>
+</body>
+</html>
