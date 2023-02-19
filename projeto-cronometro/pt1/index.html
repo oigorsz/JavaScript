@@ -18,7 +18,7 @@
         <div id="display">
            00:00:00
         </div>
-        <div>
+        <div id="botoes">
             <button id="start" class="bot" onclick="start()">Iniciar</button>
             <button id="stop" class="bot" onclick="pause()">Pausar</button>
             <button id="reset" class="bot" onclick="reset()">Resetar</button>
@@ -27,11 +27,10 @@
             <span id="historico" class="material-symbols-outlined" onclick="history()">
                 history
                 </span>
-                <div id="tempos">
+                <div id="tempos" style="display: none;">
                     <h1>Histórico</h1>
                     <p id="res"></p>
                     <span onclick="clean()" id="clean" class="material-symbols-outlined"> cleaning_services</span>
-                   
                 </div>
                 
                 

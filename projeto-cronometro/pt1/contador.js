@@ -58,10 +58,10 @@ function twoNumber(digito){
 }
 
 function history(){
-    if (tempos.style.display == "block"){
-        tempos.style.display = "none"
-    } else {
+    if (tempos.style.display == "none"){
         tempos.style.display = "block"
+    } else {
+        tempos.style.display = "none"
     }
 }
 
