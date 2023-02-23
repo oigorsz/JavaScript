@@ -66,3 +66,8 @@ function history(){
         historico.style.display = "none"
     }
 }
+
+function limpar(){
+    res.innerHTML = ""
+    historico.style.display = "none";
+}
