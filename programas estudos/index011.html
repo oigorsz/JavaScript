@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Funções</title>
+</head>
+<body>
+   <script>
+    console.log("Testando funções")
+
+
+    //Essa função ela soma os parâmetros
+    function soma(){
+        let res = 0
+
+        for(const n of arguments){
+            res += n
+        } 
+    
+        return res
+    }
+
+    function produto(){
+        let produto = 1
+
+        for(const p of arguments){
+            produto *= p
+        }
+
+        return produto
+    }
+
+    console.log(produto(20,20))
+    console.log(soma(10,40))
+   </script>
+    
+</body>
+</html>

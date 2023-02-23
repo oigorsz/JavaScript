@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+    <div>
+        <label for="inputNumber">Digite um número: </label>
+        <input type="number" name="inputNumber" id="inputNumber">
+    </div>
+    <div>
+        <button onclick="calcular()">Calcular</button>
+        <button onclick="limpar()">Limpar</button>
+    </div>
+    <div id="res">
+
+    </div>
+    <script>
+        //Coloco um número
+        let inputNumber = document.getElementById("inputNumber")
+        let res = document.getElementById("res")
+        let controlebot = true
+
+
+        //Clicar para gerar a tabuada
+
+        function calcular(){
+            if (controlebot){
+                let valorAtual = parseInt(inputNumber.value)
+
+                for(let i = 1; i <= 10; i++){
+                res.innerHTML += `<p>${valorAtual} X ${i} = ${valorAtual*i}</p>`}
+                controlebot = false
+            }
+        }
+            
+
+        function limpar(){
+            res.innerHTML = ""
+            inputNumber.value = ""
+            inputNumber.focus()
+            controlebot = true
+        } 
+    </script>
+</body>
+</html>

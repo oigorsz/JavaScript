@@ -6,14 +6,20 @@ let intervalo
 let valores
 let res = document.getElementById("res")
 let tempo
+let controle = true 
 
 
 function start(){
-    rodar()
-    intervalo = setInterval(rodar,1000)
+    if (controle){
+        rodar()
+        intervalo = setInterval(rodar,1000)
+        controle = false
+    }
+    
 }
 function pause(){
     clearInterval(intervalo)
+    controle = true
 }
 function reset(){
     clearInterval(intervalo)
@@ -27,6 +33,7 @@ function reset(){
     minute = 0
     hour = 0
     display.innerHTML = `00:00:00`
+    controle = true
 }
 
 function rodar(){

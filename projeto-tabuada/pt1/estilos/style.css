@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gugi&family=Poiret+One&family=Roboto&family=Source+Sans+Pro&family=Ubuntu&display=swap');
+
+
+:root {
+    --cor0: #FF5678;
+    --cor1: #FF7598;
+    --cor2: #ffeef0;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: var(--cor2);
+    height: 100vh;
+    width: 100vw;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    position: relative;
+}
+
+header {
+    background-color: var(--cor0);
+    margin-bottom: 2rem;
+}
+
+header > h1 {
+    color: #fff;
+
+    text-align: center;
+
+    font-size: 2.8rem;
+    font-family: Roboto;
+    padding: 1rem;
+}
+

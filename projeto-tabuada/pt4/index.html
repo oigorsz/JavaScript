@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Tabuada 4.0</title>
+</head>
+<body>
+    <div class="container">
+        <div class="inputTabuada">
+            <label for="inputNumber">Tabuada do </label>
+            <input type="number" id="inputNumber">
+        </div>
+
+        <div id="tabuada" class="tabuada">
+
+        </div>
+        <button id="botaoCalcular">Calcular</button>
+        <button id="botaoLimpar" style="display: none
+        ;">Limpar</button>
+    </div>
+
+    <script>
+        const botaoCalcular = document.getElementById("botaoCalcular")
+        const botaoLimpar = document.getElementById("botaoLimpar")
+        let tabuada = document.getElementById("tabuada")
+        let inputNumber = document.getElementById("inputNumber")
+        let controle = true
+
+
+        botaoCalcular.addEventListener("click", calcular)
+
+        function limpar(){
+            inputNumber.value == ""
+        }
+
+        function calcular(){
+            if (inputNumber.value == ""){
+                alert("Digite um número")
+                inputNumber.focus()
+
+            } else if (inputNumber.value > 10 || inputNumber.value < 0){
+                alert("Digite um número de 0 a 10")
+                inputNumber.focus()
+                inputNumber.value = ""
+
+            } else if (controle) {
+                let nowNumber = parseInt(inputNumber.value)
+                for(let i = 0; i < 10; i++){
+                    tabuada.innerHTML += `<p>${nowNumber} X ${i} = ${nowNumber * i}</p>`
+                }
+                controle = false
+                botaoCalcular.style.display = "none";
+                botaoLimpar.style.display = "block";
+            }
+
+
+        }
+
+    </script>
+    
+</body>
+</html>

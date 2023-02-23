@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada Automática</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main>
+        <div>
+            <label for="numero">
+                Digite um número: 
+            </label>
+            <input type="number" value="0" id="numero">
+        </div>
+
+        <div>
+            <button class="bot" onclick="calcular()">Calcular</button>
+            <button class="bot" onclick="limpar()">Limpar</button>
+        </div>
+        <div id="res">
+
+        </div>
+    </main>
+
+
+    <script>
+        let executado = false;
+        let numero = document.getElementById("numero")
+        let res = document.getElementById("res")
+
+        function calcular(){
+            if (!executado){
+                let numeroAtual = parseInt(numero.value)
+                let numeroNovo = numeroAtual
+                let i = 1
+
+                while ( i <= 10){
+                    res.innerHTML += `<p>${numeroNovo} X ${i} = ${numeroNovo * i }</p>`
+                    i++
+                }
+                executado = true;
+            }
+            
+        }
+
+        function limpar(){
+            numero.value = ""
+            res.innerHTML = ""
+            numero.focus()
+        }
+
+    </script>
+
+</body>
+</html>
