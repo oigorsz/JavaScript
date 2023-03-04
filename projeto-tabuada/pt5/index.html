@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Tabuada</title>
+</head>
+<body>
+    <label>Digite um número:</label>
+    <input type="number" id="numero" oninput="gerarTabuada()" />
+    <table id="tabuada"></table>
+
+
+    <script>
+      function gerarTabuada() {
+  // Pegar o número digitado pelo usuário
+  let numero = document.getElementById("numero").value;
+
+  // Obter a tabela onde a tabuada será exibida
+  let tabuada = document.getElementById("tabuada");
+
+  // Limpar a tabela
+  tabuada.innerHTML = "";
+
+  // Gerar a tabuada e adicionar à tabela
+  for (let i = 1; i <= 10; i++) {
+    let linha = document.createElement("tr");
+    let coluna1 = document.createElement("td");
+    let coluna2 = document.createElement("td");
+    coluna1.textContent = i;
+    coluna2.textContent = i * numero;
+    linha.appendChild(coluna1);
+    linha.appendChild(coluna2);
+    tabuada.appendChild(linha);
+  }
+}
+
+
+
+
+
+
+
+    </script>
+
+
+
+  
+</body>
+</html>
