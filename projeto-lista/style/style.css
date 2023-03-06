@@ -38,7 +38,7 @@ body {
     border-radius: 7px;
     box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.226);
   
-    max-width: 380px;
+    
     min-height: 300px;
     gap: 10px;
 }
