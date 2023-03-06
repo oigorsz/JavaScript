@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --blue--50: #7C9BCC;
+    --blue--100: #3C6FC2;
+    --blue--200: #2C528F;
+    --blue--400: #152642;
+
+    --dark--50: #181818;
+    --light--50: #f1f0f0;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    overflow: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: "Poppins", "Arial", "sans-serif";
+    display: flex;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom,  var(--blue--100), var(--blue--200), var(--blue--400));
+}
+
+
+.container {
+    background-color: var(--light--50);
+    border-radius: 7px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.11);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  
+
+    padding: 15px 20px;
+    gap: 20px;
+}
+
+
+.input_header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px ;
+}
+
+.input_header h1 {
+    font-size: 2em;
+}
+
+.input_header::after {
+    content: "";
+    background-color: var(--blue--400);
+    border-radius: 3px;
+    height: 3px;
+    width: 40%;
+}
+
+.input_box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input_box label {
+    font-size: 1.1em;
+    font-weight: normal;
+    width: 100%;
+    height: 60px;
+    padding: 5px;
+}
+
+.input_box input {
+    font-size: 1.1em;
+    font-weight: normal;
+    background-color: var(--light--50);
+    border: none;
+    border-bottom: 1px solid var(--blue--400); 
+    padding: 5px;
+}
+
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    border-bottom: 1px solid var(--blue--400);
+    outline: 0;
+} 
+
+
+.button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--blue--200);
+
+    color: var(--light--50);
+    font-size: 1.2em;
+    font-weight: normal;
+
+    padding: 10px 7px;
+}
+
+.res_box {
+    background-color: #b3bfd3;
+    border-radius: 7px;
+    padding: 10px 8px;
+    color: var(--dark--50);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+}
+
+#buttonCalc {
+    display: block;
+}
+
+#buttonClean {
+    display: none;
+}

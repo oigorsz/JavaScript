@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --blue--50: #7C9BCC;
+    --blue--100: #3C6FC2;
+    --blue--200: #2C528F;
+    --blue--400: #152642;
+
+    --dark--50: #181818;
+    --light--50: #f1f0f0;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: "Poppins", "Arial", "sans-serif";
+    display: flex;
+    box-sizing: border-box;
+
+
+    background-image: linear-gradient(to bottom,  var(--blue--100), var(--blue--200), var(--blue--400));
+}
+
+.container {
+    display: block;
+    flex-direction: column;
+    background-color: var(--light--50);
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px 15px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.226);
+  
+    max-width: 380px;
+    min-height: 300px;
+    gap: 10px;
+}
+
+.input_header  {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.input_header h1 {
+    font-size: 2rem;
+    
+}
+
+.input_header::after {
+
+    content: " ";
+    height: 3px;
+    width: 35%;
+    background-color: var(--blue--400);
+    border-radius: 3px;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    border-bottom: 1px solid var(--blue--400);
+    outline: 0;
+} 
+
+.input_box {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: auto;
+
+    margin-bottom: 20px;
+}
+
+.input_box label {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.input_box input{
+    font-size: 1em;
+    font-family: "Poppins";
+    border: none;
+    border-bottom: 1.5px solid var(--blue--400);
+    background-color: var(--light--50);
+    
+}
+
+#res {
+    display: none;
+    background-color: #cacaca;
+    border-radius: 7px;
+    margin: auto;
+    padding: 10px;
+
+   
+
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: var(--blue--100);
+    border: none;
+    border-radius: 7px;
+    padding: 10px 8px;
+
+    color: var(--light--50);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: var(--blue--400);
+    color: #fff;
+}
+
+#buttonClean {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+    width: 200px;
+}
+
+
